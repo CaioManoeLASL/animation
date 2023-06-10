@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="logo">
+        <div class="maiorq"></div>
+        <div class="underline"></div>
+    </div>
+    <div class="wrapper">
+        <ul class="dynamic-txts">
+            <li><span>Determinado</span></li>
+            <li><span>Desenvolvedor</span></li>
+            <li><span>Digital College</span></li>
+        </ul>
+    </div>
+    <script>
+        const light = document.querySelector(".logo");
+        const under = document.querySelector(".underline");
+        const maiorq = document.querySelector(".maiorq::after, .maiorq::before");
+
+        light.addEventListener("click", function(){
+            light.classList.toggle("on");
+            under.classList.toggle("on");
+            maiorq.classList.toggle("on");
+        })
+        
+    </script>
+</body>
+</html>
